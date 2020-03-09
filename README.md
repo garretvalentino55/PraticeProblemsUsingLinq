@@ -1,0 +1,2 @@
+# PraticeProblemsUsingLinq
+first pair project
