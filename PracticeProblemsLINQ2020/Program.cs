@@ -10,29 +10,27 @@ namespace PracticeProblemsLINQ2020
     {
         static void Main(string[] args)
         {
-
             //************************************************PROBLEM 1****************************************//
             //Using LINQ, write a function that returns all words that contain the substring “th” from a list.
 
-            //var words = new List<string>() { "the", "bike", "this", "it", "tenth", "mathematics" };
-            //var substring = words.Where(w => w.Contains("th"));
-            //foreach (var word in substring)
-            //{
-            //    Console.WriteLine(word);
-            //}
-            //Console.ReadLine();
-
+            var words = new List<string>() { "the", "bike", "this", "it", "tenth", "mathematics" };
+            var substring = words.Where(w => w.Contains("th"));
+            foreach (var word in substring)
+            {
+                Console.WriteLine(word);
+            }
+            Console.ReadLine();
 
             //*******************************************************PROBLEM 2**********************************************//
             // Using LINQ, write a function that takes in a list of strings and returns a copy of the list without duplicates.
-            //List<string> names = new List<string>() { "Mike", "Brad", "Nevin", "Ian", "Mike" };
-            //var newNameList = names.Distinct();
-            //foreach(string n in newNameList)
-            //{
-            //    Console.WriteLine(n);
-            //}
-
-            //Console.ReadLine();
+            
+            List<string> names = new List<string>() { "Mike", "Brad", "Nevin", "Ian", "Mike" };
+            var newNameList = names.Distinct();
+            foreach (string n in newNameList)
+            {
+                Console.WriteLine(n);
+            }
+            Console.ReadLine();
 
             //*******************************************************PROBLEM 3************************************************//
             // Using LINQ, write a function that calculates the class grade average after dropping the lowest grade 
@@ -46,9 +44,6 @@ namespace PracticeProblemsLINQ2020
                 "73, 88, 83, 99, 64",  // Drop 64
                 "98, 100, 66, 74, 55"  // Drop 55
              };
-            List[] 
-
-
         }
         //foreach (var item in collection)
     }
